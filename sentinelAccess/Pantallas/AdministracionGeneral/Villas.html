@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Villas | Administración general </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/sentinelAccess/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/summernote/summernote-bs4.min.css">
+
+    <!-- Referencia para iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Referencia para iconos de small-box-->
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/dropzone/min/dropzone.min.css">
+
+
+
+</head>
+
+<body class="hold-transition  sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake img-circle elevation-3" src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" alt="BenditoCafeLogo" height="120" width="120">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="/sentinelAccess/Inicio.html" class="brand-link">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" alt="A\Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light"> Residencial MG </span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/sentinelAccess/dist/img/userImg.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Usuario 1</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <!--Treeview para administracion general-->
+                        <li class="nav-item menu-open  ">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-grid-fill"></i>
+                                <p>
+                                    Administración general
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/sentinelAccess/Pantallas/AdministracionGeneral/Villas.html" class="nav-link active">
+                                        <i class="bi bi-house-fill"></i>
+                                        <p>Villas</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/sentinelAccess/Pantallas/AdministracionGeneral/Residentes.html" class="nav-link">
+                                        <i class="bi bi-person-plus"></i>
+                                        <p>Residentes</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <!--Treeview para Seguridad-->
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-shield-lock"></i>
+                                <p>
+                                    Seguridad
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+
+                                        <i class="bi bi-signpost-split"></i>
+
+                                        <p>Administrar accesos</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-card-list"></i>
+                                        <p>Registro de accesos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-people"></i>
+                                        <p>Registro de visitantes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Treeview para Configuracion-->
+
+                        <li class="nav-item menu-close ">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-gear-wide-connected"></i>
+                                <p>
+                                    Configuración
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-video3"></i>
+                                        <p>Crear usuarios</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-rolodex"></i>
+                                        <p>Administrar roles</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-video2"></i>
+                                        <p>Administrar Usuarios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Información de Villas</h1>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="./Inicio.html">Inicio</a></li>
+                                <li class="breadcrumb-item active">Villas</li>
+                            </ol>
+
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+
+
+                    <!--Contenedor-->
+                    <div class="card-footer">
+                        <div class="container-fluid">
+
+                            <!--Espacio para smallboxes-->
+                            <!-- Small boxes (Stat box) -->
+                            <div class="row">
+                                <div class="col-lg-6 col-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-info">
+                                        <div class="inner">
+                                            <h3>12</h3>
+
+                                            <p>Villas totales registradas</p>
+                                        </div>
+                                        <div class="icon"> <i class="iconify" data-icon="bi:building"></i>
+                                        </div>
+                                        <a class="small-box-footer"></a>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-6 col-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-success">
+                                        <div class="inner">
+                                            <h3>353<sup style="font-size: 20px"></sup></h3>
+
+                                            <p>Viviendas habitadas</p>
+                                        </div>
+                                        <div class="icon"> <i class="iconify" data-icon="bi:house-fill"></i>
+                                        </div>
+                                        <a class="small-box-footer"></a>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+
+
+                            </div>
+                            <!-- /.row -->
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="content">
+
+                            <div class="container-fluid">
+
+                                <div class="card card-default">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Listado por villas </h3>
+
+                                        <div class="card-tools">
+
+                                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#AgregarVilla">
+                                                Agregar nueva villa
+                                                  </button>
+
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- /.card-header -->
+                                    <div class="card-footer">
+
+
+                                        <div class="container-fluid">
+
+
+                                            <!-------------------------------Fila 1------------------------>
+                                            <div class="row">
+
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box" type="button" type="button" data-toggle="modal" data-target="#VerVillas">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Park Spartans</span>
+                                                            <span class="info-box-number"> 6 <small>Residentes</small></span>
+
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box" type="button">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/83/d1/6b/83d16b15-4a6f-ae9e-2242-157724170e5a/source/256x256bb.jpg" height="70" width="70"></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Victoria</span>
+                                                            <span class="info-box-number">
+                                                          22
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box" type="button">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/14/bf/5f/14bf5f7e-7ebc-2ad9-6a6f-57db0f75b4d7/source/256x256bb.jpg" height="70" width="70"></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Quinn Hill</span>
+                                                            <span class="info-box-number">
+                                                          35
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box" type="button" onclick="location.href='\inicio.html'">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://skyprimegroup.com/wp-content/uploads/2018/04/horizon-villas-logo.png" height="70" width="70"></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Horizon</span>
+                                                            <span class="info-box-number">
+                                                          10
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+                                            </div>
+
+                                            <!----------------------Fila 2-------------------------->
+                                            <div class="row">
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa España</span>
+                                                            <span class="info-box-number">
+                                                          36
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Robles</span>
+                                                            <span class="info-box-number">
+                                                          29
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Evangelion</span>
+                                                            <span class="info-box-number">
+                                                          66
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Florencia</span>
+                                                            <span class="info-box-number">
+                                                          10
+                                                          <small>Residentes</small>
+                                                        </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+
+
+                                            </div>
+
+                                            <!----------------------Fila 3-------------------------->
+                                            <div class="row">
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Real</span>
+                                                            <span class="info-box-number">
+                                                              33
+                                                              <small>Residentes</small>
+                                                            </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Pagani</span>
+                                                            <span class="info-box-number">
+                                                              27
+                                                              <small>Residentes</small>
+                                                            </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Indie</span>
+                                                            <span class="info-box-number">
+                                                              66
+                                                              <small>Residentes</small>
+                                                            </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <div class="col-12 col-sm-6 col-md-3">
+                                                    <div class="info-box">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+
+                                                        <div class="info-box-content">
+                                                            <span class="info-box-text">Villa Palma real</span>
+                                                            <span class="info-box-number">
+                                                              23
+                                                              <small>Residentes</small>
+                                                            </span>
+                                                        </div>
+                                                        <!-- /.info-box-content -->
+                                                    </div>
+                                                    <!-- /.info-box -->
+                                                </div>
+                                                <!-- /.col -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- /.content-header -->
+
+                <!-------------------Area de modales---------------------------->
+
+
+                <div class="modal fade" id="AgregarVilla">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <div class="col-12 col-sm-6 col-md-12">
+                                    <div class="info-box bg-gradient-lightblue">
+                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" height="70" width="70"></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text">Residencial MG | Ingreso de nueva villa </span>
+                                            <span class="info-box-number"> 12 <small>Villas registradas</small></span>
+
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                                <!-- /.col -->
+
+                            </div>
+                            <div class="modal-body">
+                                <!--------------------Cuerpo del modal------------------------->
+
+                                <div class="row">
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+
+                                        <label for="text" class="col-form-label mt-2">Nombre de la villa</label>
+                                        <input type="text" class="form-control " id="validationDefault01" placeholder="Ingrese un nombre de producto" value="Ingrese un nombre" required>
+
+                                        <label for="text" class="col-form-label mt-2 ">Código  de la villa</label>
+                                        <input type="text" class="form-control " id="validationDefault01" placeholder="Ingrese un nombre de producto" value="Ingrese un codigo" required>
+
+                                        <label for="inputEstimatedDuration" class="col-form-label mt-2"> Asignar número de bloques disponibles </label>
+                                        <input type="number" id="inputEstimatedDuration" placeholder="0" class="form-control">
+
+
+
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+
+                                        <div class="form-group">
+
+
+                                            <label for="text" class="col-form-label mt-2">Descripción</label>
+                                            <textarea type="text" class="form-control" rows="5" placeholder="Ingrese una descripción" required></textarea>
+
+
+                                            <label for="inputEstimatedDuration"> Asignar número de casas disponibles </label>
+                                            <input type="number" id="inputEstimatedDuration" placeholder="0" class="form-control">
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-12">
+
+                                        <label>Agregar logo representativo</label>
+
+                                        <div class="card-body">
+                                            <div id="actions" class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="btn-group w-100">
+                                                        <span class="btn btn-success col fileinput-button">
+                                                    <i class="fas fa-plus"></i>
+                                                    <span>Agregar imagen</span>
+                                                        </span>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 d-flex align-items-center">
+                                                    <div class="fileupload-process w-100">
+                                                        <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                            <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table table-striped files" id="previews">
+                                                <div id="template" class="row mt-2">
+                                                    <div class="col-auto">
+                                                        <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <p class="mb-0">
+                                                            <span class="lead" data-dz-name></span> (
+                                                            <span data-dz-size></span>)
+                                                        </p>
+                                                        <strong class="error text-danger" data-dz-errormessage></strong>
+                                                    </div>
+                                                    <div class="col-4 d-flex align-items-center">
+                                                        <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                            <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto d-flex align-items-center">
+                                                        <div class="btn-group">
+
+                                                            <button data-dz-remove class="btn btn-danger delete">
+                                                      <i class="fas fa-trash"></i>
+                                                      <span>Borrar</span>
+                                                    </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+
+                <!---------- /. fin modal agregar villa ----------------------->
+
+                <!----------  inicio modal ver villas ----------------------->
+
+
+
+
+                <div class="modal fade" id="VerVillas">
+                    <div class="modal-dialog  modal-dialog-scrollable modal-xl ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <div class="col-12 col-sm-6 col-md-12">
+                                    <div class="info-box bg-gradient-lightblue">
+                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text">Villa Park Spartans</span>
+                                            <span class="info-box-number"> 6 de 60 <small>Viviendas habitadas</small></span>
+
+                                        </div>
+                                        <button class='btn btn-outline-light pull-right' data-toggle="modal" href="#AsignacionCasas"> Asignar número de viviendas </button>
+
+                                        <!--asignar validacion en db para no poder ingresar residente en una residencial si no hay casas disponibles-->
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                                <!-- /.col -->
+
+                                <h4 class="modal-title"></h4>
+
+                            </div>
+                            <div class="container"></div>
+                            <div class="modal-body">
+                                <!--Cuerpo del modal-->
+
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+
+                                    <div class="card-body">
+                                        <table id="example1" class="table table-bordered table-striped" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Id Residente</th>
+                                                    <th>Residente propietario </th>
+                                                    <th># de bloque</th>
+                                                    <th># de casa</th>
+                                                    <th># de placa 1</th>
+                                                    <th># de placa 2</th>
+                                                    <th># de placa 3</th>
+                                                    <th>Editar</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>0801-1996-09478</td>
+                                                    <td>Hernesto Villalobos </td>
+                                                    <th>6</th>
+                                                    <td>01</td>
+                                                    <th>HAB 5896</th>
+                                                    <td>No registrado</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" href="#myModal2"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>0801-1980-01256</td>
+                                                    <td>Roman Alexander</td>
+                                                    <th>6</th>
+                                                    <td>02</td>
+                                                    <th>HAA 2502</th>
+                                                    <td>No registrado</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" data-target="#EditarPerecedero"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>0801-1977-25596</td>
+                                                    <td>Victor Robles</td>
+                                                    <th>6</th>
+                                                    <td>03</td>
+                                                    <th>HAA 6554</th>
+                                                    <td>HAB 2589</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" data-target="#EditarPerecedero"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>0801-1975-25589</td>
+                                                    <td>Gordon Freeman</td>
+                                                    <th>6</th>
+                                                    <td>04</td>
+                                                    <th>HAA 8963</th>
+                                                    <td>No registrado</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" data-target="#EditarPerecedero"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>0801-1970-89656</td>
+                                                    <td>Roman Alexander</td>
+                                                    <th>6</th>
+                                                    <td>05</td>
+                                                    <th>HAA 9638</th>
+                                                    <td>No registrado</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" data-target="#EditarPerecedero"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>0801-1958-02646</td>
+                                                    <td>Lucas Ramirez</td>
+                                                    <th>6</th>
+                                                    <td>06</td>
+                                                    <th>HAA 4589</th>
+                                                    <td>No registrado</td>
+                                                    <td>No registrado</td>
+                                                    <th>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-dark" data-toggle="modal" href="#myModal2"> <i class="fas fa-edit"></i> </button>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+
+
+
+
+
+                                            </tbody>
+                                            <tfoot>
+
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal2" data-backdrop="static">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <div class="col-12 col-sm-6 col-md-12">
+                                    <div class="info-box bg-gradient-lightblue">
+                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text">Residente de Villa Park Spartans</span>
+
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                                <!-- /.col -->
+
+                            </div>
+                            <div class="container"></div>
+                            <div class="modal-body">
+
+                                <!--Cuerpo de modal-->
+
+                                <div class="row">
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+
+                                        <label for="text" class="col-form-label">Id del residente</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="Ingrese un Id" required>
+
+                                        <label for="text" class="col-form-label">Nombre completo</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="Ingrese Nombre " required>
+
+                                        <label for="text" class="col-form-label">numero de bloque</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="Ingrese numero de bloque" required>
+
+                                        <label for="text" class="col-form-label">numero de casa</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="Ingrese numero de casa" required>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+
+                                        <label for="text" class="col-form-label">numero de placa 1</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="Ingrese numero de placa" required>
+
+                                        <label for="text" class="col-form-label">numero de placa 2</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="(opcional)" required>
+
+                                        <label for="text" class="col-form-label">numero de placa 3</label>
+                                        <input type="text" class="form-control mt-3" id="validationDefault01" placeholder="" value="(opcional) " required>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <a href="#" class="btn btn-primary">Guardar cambios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Modal de asignacion de casas-->
+                <div class="modal fade" id="AsignacionCasas" data-backdrop="static">
+                    <div class="modal-dialog  modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <div class="col-12 col-sm-6 col-md-12">
+                                    <div class="info-box bg-gradient-lightblue">
+                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
+
+                                        <div class="info-box-content">
+                                            <span class="info-box-text">Editar número de casas en Park Spartans</span>
+
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                    </div>
+                                    <!-- /.info-box -->
+                                </div>
+                                <!-- /.col -->
+
+                            </div>
+                            <div class="container"></div>
+                            <div class="modal-body">
+
+                                <!--Cuerpo de modal-->
+
+                                <div class="row">
+
+                                    <label for="text" class="col-form-label"> Casas actuales </label>
+                                    <input type="text" class="form-control mt-3" disabled="true" placeholder="" value="60">
+
+                                    <label for="inputEstimatedDuration"> Nuevo numero asignado </label>
+                                    <input type="number" id="inputEstimatedDuration" class="form-control">
+
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <a href="#" class="btn btn-primary">Guardar cambios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-------------------Fin de modales---------------------------->
+
+
+
+
+
+
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                        <!-- Small boxes (Stat box) -->
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <!-- small box -->
+
+                            </div>
+
+                        </div>
+                        <!-- /.row -->
+                        <!-- Main row -->
+                        <div class="row">
+                            <!-- Left col -->
+                            <section class="col-lg-7 connectedSortable">
+                                <!-- Custom tabs (Charts with tabs)-->
+
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <!-- /.card-footer-->
+                    </div>
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-5 connectedSortable">
+
+
+
+
+
+                        <!-- Calendar -->
+
+                        <!-- /.card -->
+                    </section>
+                    <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+        </div>
+        <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong><a href="https://adminlte.io"></a>.</strong>
+
+        <div class="float-right d-none d-sm-inline-block">
+            <b></b>
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+
+
+
+    <script src="/sentinelAccess/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="/sentinelAccess/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="/sentinelAccess/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="/sentinelAccess/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="/sentinelAccess/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/sentinelAccess/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="/sentinelAccess/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="/sentinelAccess/plugins/moment/moment.min.js"></script>
+    <script src="/sentinelAccess/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="/sentinelAccess/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="/sentinelAccess/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/sentinelAccess/dist/js/adminlte.js"></script>
+
+
+
+    <!-- jQuery -->
+    <script src="/sentinelAccess/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="/sentinelAccess/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/jszip/jszip.min.js"></script>
+    <script src="/sentinelAccess/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="/sentinelAccess/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+
+    <!-- dropzonejs -->
+    <script src="/sentinelAccess/plugins/dropzone/min/dropzone.min.js"></script>
+
+    <!-- Page specific script -->
+    <script>
+        // DropzoneJS Demo Code Start
+        Dropzone.autoDiscover = false
+
+        // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+        var previewNode = document.querySelector("#template")
+        previewNode.id = ""
+        var previewTemplate = previewNode.parentNode.innerHTML
+        previewNode.parentNode.removeChild(previewNode)
+
+        var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+            url: "/target-url", // Set the url
+            thumbnailWidth: 80,
+            thumbnailHeight: 80,
+            parallelUploads: 20,
+            previewTemplate: previewTemplate,
+            autoQueue: false, // Make sure the files aren't queued until manually added
+            previewsContainer: "#previews", // Define the container to display the previews
+            clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+        })
+
+        myDropzone.on("addedfile", function(file) {
+            // Hookup the start button
+            file.previewElement.querySelector(".start").onclick = function() {
+                myDropzone.enqueueFile(file)
+            }
+        })
+
+        // Update the total progress bar
+        myDropzone.on("totaluploadprogress", function(progress) {
+            document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+        })
+
+        myDropzone.on("sending", function(file) {
+            // Show the total progress bar when upload starts
+            document.querySelector("#total-progress").style.opacity = "1"
+                // And disable the start button
+            file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+        })
+
+        // Hide the total progress bar when nothing's uploading anymore
+        myDropzone.on("queuecomplete", function(progress) {
+            document.querySelector("#total-progress").style.opacity = "0"
+        })
+
+        // Setup the buttons for all transfers
+        // The "add files" button doesn't need to be setup because the config
+        // `clickable` has already been specified.
+        document.querySelector("#actions .start").onclick = function() {
+            myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+        }
+        document.querySelector("#actions .cancel").onclick = function() {
+                myDropzone.removeAllFiles(true)
+            }
+            // DropzoneJS Demo Code End
+    </script>
+
+
+    <script type="text/javascript">
+        $(function() {
+
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Hoy': [moment(), moment()],
+                    'Ayer': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Ultimos 7 dias': [moment().subtract(6, 'days'), moment()],
+                    'Mes pasado': [moment().subtract(29, 'days'), moment()],
+                    'Este mes': [moment().startOf('month'), moment().endOf('month')],
+                    'Este año': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

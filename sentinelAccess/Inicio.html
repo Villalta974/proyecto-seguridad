@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad | Inicio </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/sentinelAccess/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="/sentinelAccess/plugins/summernote/summernote-bs4.min.css">
+
+
+    <!-- Referencia para iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Referencia para iconos de small-box-->
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake img-circle elevation-3" src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" alt="BenditoCafeLogo" height="120" width="120">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="Inicio.html" class="brand-link se">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" alt="A\Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light"> Residencial MG </span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/sentinelAccess/dist/img/userImg.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Usuario 1</a>
+                    </div>
+                </div>
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+
+                        <!--Treeview para administracion general-->
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-grid-fill"></i>
+                                <p>
+                                    Administración general
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/sentinelAccess/Pantallas/AdministracionGeneral/Villas.html" class="nav-link">
+                                        <i class="bi bi-house-fill"></i>
+                                        <p>Villas</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/sentinelAccess/Pantallas/AdministracionGeneral/Residentes.html" class="nav-link">
+                                        <i class="bi bi-person-plus"></i>
+                                        <p>Residentes</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <!--Treeview para Seguridad-->
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-shield-lock"></i>
+                                <p>
+                                    Seguridad
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+
+                                        <i class="bi bi-signpost-split"></i>
+
+                                        <p>Administrar accesos</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-card-list"></i>
+                                        <p>Registro de accesos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-people"></i>
+                                        <p>Registro de visitantes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Treeview para Configuracion-->
+
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link bg-gradient-dark">
+                                <i class="bi-gear-wide-connected"></i>
+                                <p>
+                                    Configuración
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-video3"></i>
+                                        <p>Crear usuarios</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-rolodex"></i>
+                                        <p>Administrar roles</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-person-video2"></i>
+                                        <p>Administrar Usuarios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+<<<<<<< HEAD:sentinelAccess/Inicio.html
+=======
+<<<<<<< HEAD
+>>>>>>> cedeb320d0fc110b9e038bb435dde4f194912d64:AdminLTE-3.2.0/Inicio.html
+
+=======
+>>>>>>> 29f58f8f24ca833a2cc45d4fc5738518c919ddee
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Resumen diario</h1>
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+
+
+                    <!--Contenedor-->
+                    <div class="card-footer">
+                        <div class="container-fluid">
+
+                            <div class="row">
+
+                                <div class="col-lg-4 col-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-dark">
+                                        <div class="inner">
+                                            <h3>2<sup style="font-size: 20px"></sup></h3>
+
+                                            <p>Accesos registrados</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-stats-bars"></i>
+                                        </div>
+                                        <a class="small-box-footer">
+                                            <button type="button" onclick="location.href='#'" class="btn bg-gradient-dark" data-toggle="modal" data-target="#InfoProd">
+                                                Mas información <i class="fas fa-arrow-circle-right"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-4 col-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-gradient-indigo">
+                                        <div class="inner">
+                                            <h3>3 </h3>
+
+                                            <p> Visitantes hoy</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="iconify" data-icon="ion:calendar-outline"></i>
+                                        </div>
+                                        <a class="small-box-footer">
+
+                                            <button type="button" onclick="location.href='#'" class="btn bg-gradient-indigo" onclick="">
+                                                Mas información <i class="fas fa-arrow-circle-right"></i>
+                                             </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-lg-4 col-12">
+                                    <!-- small box -->
+                                    <div class="small-box bg-info">
+                                        <div class="inner">
+                                            <h3>357 </h3>
+
+                                            <p>Total residentes</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="iconify" data-icon="bi:person-check-fill"></i>
+                                        </div>
+                                        <a class="small-box-footer">
+
+                                            <button type="button" onclick="location.href='/sentinelAccess/Pantallas/AdministracionGeneral/Residentes.html'" class="btn bg-gradient-info">
+                                                Mas información <i class="fas fa-arrow-circle-right"></i>
+                                            </button>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                            <!-- /.row -->
+                        </div>
+                        <div class="content">
+
+                            <div class="container-fluid">
+
+                                <div class="card card-default">
+                                    <div class="card-header">
+                                        <h3 class="card-title">...
+                                            <div class="card-tools">
+
+                                            </div>
+
+                                    </div>
+
+
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <button onclick="location.href='#'" type="button" class="btn btn-primary">...</button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+
+
+
+
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-md-6">
+
+
+                                            </div>
+
+
+                                            <!-- /.col -->
+                                        </div>
+
+
+                                        <!-- /.row -->
+
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+
+                                                <!-- /.form-group -->
+                                            </div>
+
+                                            <!-- /.col -->
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+
+                                                </div>
+                                                <!-- /.form-group -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+
+                                    </div>
+
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <!--Modal Informacion productos en baja existencia-->
+
+                            <div class="modal fade" id="InfoProd">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Productos en poca existencia</h4>
+
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          
+                    <span aria-hidden="true">&times;</span>
+                    
+                  </button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+
+                                                <div class="col-sm-12 p-3 bg-white text-black">
+
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12 p-3 bg-white text-black">
+
+                                                        <div class="card">
+                                                            <div class="card-header">
+
+
+                                                                <div class="card-tools">
+                                                                    <ul class="pagination pagination-sm float-right">
+                                                                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.card-header -->
+                                                            <div class="card-body p-0">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+
+                                                                            <th>Producto</th>
+
+                                                                            <th style="width: 40px">Unidades restantes</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+
+                                                                            <td>Pastelitos de piña</td>
+                                                                            <td>
+                                                                                <div class="progress progress-xs">
+                                                                                    <div class="progress-bar progress-bar-danger" style="width: 12%"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td><span class="badge bg-danger">12</span></td>
+                                                                        </tr>
+                                                                        <tr>
+
+
+
+
+                                                                            <td>Queso</td>
+                                                                            <td>
+                                                                                <div class="progress progress-xs">
+                                                                                    <div class="progress-bar progress-bar-danger" style="width: 15%"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td><span class="badge bg-danger">15</span></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <!-- /.card-body -->
+                                                        </div>
+
+
+                                                        <div class="row">
+                                                            <div class="col-sm-12 p-3 bg-white text-black">
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                            <!--Cuerpo de modal para textbox-->
+                                        </div>
+                                        <div class="modal-footer justify-content-between">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                            <button onclick="location.href='\OrdenCompras2.html'" type="button" class="btn btn-primary">Generar nueva orden de compra</button>
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+
+
+
+                            </div>
+
+
+                            <!--Modal Informacion Compras efectuadas-->
+                            <div class="modal fade" id="InfoCompras">
+                                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Compras globales</h4>
+
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        
+                  <span aria-hidden="true">&times;</span>
+                  
+                </button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+
+                                                <div class="col-sm-12 p-3 bg-white text-black">
+
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12 p-3 bg-white text-black">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title"></h3>
+                                                            </div>
+                                                            <!-- /.card-header -->
+                                                            <div class="card-body">
+                                                                <table id="example1" class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Id de compra</th>
+                                                                            <th>Total productos comprados</th>
+                                                                            <th>Proveedor</th>
+                                                                            <th>Fecha de compra</th>
+                                                                            <th>Total L.</th>
+                                                                            <th>Fecha</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>001</td>
+                                                                            <td>25
+                                                                            </td>
+                                                                            <td>Roman Alexander</td>
+                                                                            <td>16/2/2022</td>
+                                                                            <td> 12,500</td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>002</td>
+                                                                            <td>35
+                                                                            </td>
+                                                                            <td>Roman Alexander</td>
+                                                                            <td>17/2/2022</td>
+                                                                            <td>5,670</td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>003</td>
+                                                                            <td>40
+                                                                            </td>
+                                                                            <td>Roman Alexander</td>
+                                                                            <td>19/2/2022</td>
+                                                                            <td>1,400</td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>004</td>
+                                                                            <td>20
+                                                                            </td>
+                                                                            <td>Roman Alexander</td>
+                                                                            <td>22/2/2022</td>
+                                                                            <td>4,000</td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>005</td>
+                                                                            <td>35</td>
+                                                                            <td>Roman Alexander</td>
+                                                                            <td>24/2/2022</td>
+                                                                            <td>5,000</td>
+
+                                                                        </tr>
+
+
+
+                                                                    </tbody>
+                                                                    <tfoot>
+
+                                                                    </tfoot>
+                                                                </table>
+                                                            </div>
+                                                            <!-- /.card-body -->
+                                                        </div>
+
+
+                                                        <div class="row">
+                                                            <div class="col-sm-12 p-3 bg-white text-black">
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                            <!--Cuerpo de modal para textbox-->
+                                        </div>
+                                        <div class="modal-footer justify-content-between">
+
+                                            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                        <!-- /.container-fluid -->
+                    </div>
+                    <!-- /.content-header -->
+
+
+
+                    <!-- Main content -->
+                    <section class="content">
+                        <div class="container-fluid">
+                            <!-- Small boxes (Stat box) -->
+                            <div class="row">
+                                <div class="col-lg-3 col-6">
+                                    <!-- small box -->
+
+                                </div>
+
+                            </div>
+                            <!-- /.row -->
+                            <!-- Main row -->
+                            <div class="row">
+                                <!-- Left col -->
+                                <section class="col-lg-7 connectedSortable">
+                                    <!-- Custom tabs (Charts with tabs)-->
+
+
+                            </div>
+                            <!-- /.card-body -->
+
+                            <!-- /.card-footer-->
+                        </div>
+
+
+                        </section>
+                        <!-- /.Left col -->
+                        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                        <section class="col-lg-5 connectedSortable">
+
+
+
+
+
+                            <!-- Calendar -->
+
+                            <!-- /.card -->
+                        </section>
+                        <!-- right col -->
+                </div>
+                <!-- /.row (main row) -->
+            </div>
+            <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong><a href="https://adminlte.io"></a>.</strong>
+
+            <div class="float-right d-none d-sm-inline-block">
+                <b></b>
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+
+    <style>
+        .map-container-3 {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container-3 iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+
+    <script src="/sentinelAccess/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="/sentinelAccess/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="/sentinelAccess/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="/sentinelAccess/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="/sentinelAccess/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/sentinelAccess/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="/sentinelAccess/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="/sentinelAccess/plugins/moment/moment.min.js"></script>
+    <script src="/sentinelAccess/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="/sentinelAccess/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="/sentinelAccess/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/sentinelAccess/dist/js/adminlte.js"></script>
+
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!--Para obtener tiempo -->
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="/sentinelAccess/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/sentinelAccess/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="/sentinelAccess/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="/sentinelAccess/plugins/jszip/jszip.min.js"></script>
+    <script src="/sentinelAccess/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="/sentinelAccess/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="/sentinelAccess/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+
+    <!-- AdminLTE for demo purposes -->
+
+    <!-- Page specific script -->
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["excel", "pdf", "print"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+</body>
+
+</html>
