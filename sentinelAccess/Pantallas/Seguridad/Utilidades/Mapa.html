@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Administración de accesos | Seguridad </title>
+    <title> Mapa | Seguridad </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -186,8 +186,11 @@
 
                                         <i class="bi bi-signpost-split"></i>
 
-                                        <p>Administrar accesos</p>
+                                        <p>Administrar accesos </p>
+
                                     </a>
+
+
                                 </li>
 
                                 <li class="nav-item">
@@ -263,8 +266,9 @@
                         <!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="./Inicio.html">Inicio</a></li>
-                                <li class="breadcrumb-item active">Villas</li>
+                                <li class="breadcrumb-item active">Seguridad</li>
+                                <li class="breadcrumb-item active"> <a href="/sentinelAccess/Pantallas/Seguridad/AdministrarAccesos.html">Administrar accesos</a></li>
+                                <li class="breadcrumb-item active">Directorio telefonico</li>
                             </ol>
 
                         </div>
@@ -307,7 +311,7 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-3 col-sm-6 col-12 ">
-                                <div class="info-box bg-gradient-info" type="button" onclick="location.href='/sentinelAccess/Pantallas/Seguridad/Utilidades/DirectorioTelefonico.html'">
+                                <div class="info-box bg-gradient-info" type="button" onclick=" ">
                                     <span class="info-box-icon "><img img src="/sentinelAccess/dist/img/directorio.png"></img></span>
 
                                     <div class="info-box-content ">
@@ -320,11 +324,11 @@
                             </div>
                             <!-- /.col -->
                             <div class="col-md-3 col-sm-6 col-12 ">
-                                <div class="info-box bg-gradient-info" type="button" onclick="location.href='/sentinelAccess/Pantallas/Seguridad/Utilidades/Mapa.html'">
+                                <div class="info-box bg-gradient-info" type="button">
                                     <span class="info-box-icon "><img img src="/sentinelAccess/dist/img/map.png"></img></span>
 
                                     <div class="info-box-content ">
-                                        <span class="info-box-text ">Ver accesos</span>
+                                        <span class="info-box-text ">Ver puntos</span>
                                         <span class="info-box-text ">en mapa</span>
                                     </div>
                                     <!-- /.info-box-content -->
@@ -337,106 +341,60 @@
 
                         <!-- ===========================Listado de accesos================================ -->
 
-                        <div class="col-12 col-sm-12">
-                            <div class="card card-primary card-tabs ">
-                                <div class="card-header p-0 pt-1 bg-gradient-cyan">
 
-                                    <ul class="nav nav-tabs bg-gradient-cyan" id="custom-tabs-two-tab" role="tablist">
+
+                        <div class="col-12 col-sm-12 ">
+                            <div class="card card-primary card-tabs ">
+                                <div class="card-header p-0 pt-1 bg-gradient-cyan ">
+
+                                    <ul class="nav nav-tabs bg-gradient-cyan " id="custom-tabs-two-tab " role="tablist ">
 
                                         <li class="pt-2 px-3 ">
-                                            <h3 class="card-title "> Listado de Accesos </h3>
+                                            <h3 class="card-title "> Listado de accesos </h3>
 
 
                                             <div class="card-body ">
 
                                             </div>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="custom-tabs-two-home-tab" data-toggle="pill" href="#custom-tabs-two-home" role="tab" aria-controls="custom-tabs-two-home" aria-selected="true">Accesos generales</a>
+                                        <li class="nav-item ">
+                                            <a class="nav-link " id="custom-tabs-two-home-tab " data-toggle="pill " href="#custom-tabs-two-home " role="tab " aria-controls="custom-tabs-two-home " aria-selected="true ">Accesos principales</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="custom-tabs-two-profile-tab" data-toggle="pill" href="#custom-tabs-two-profile" role="tab" aria-controls="custom-tabs-two-profile" aria-selected="false"> Accesos por villas</a>
+                                        <li class="nav-item ">
+                                            <a class="nav-link " id="custom-tabs-two-profile-tab " data-toggle="pill " href="#custom-tabs-two-profile " role="tab " aria-controls="custom-tabs-two-profile " aria-selected="false ">Accesos por villas</a>
                                         </li>
 
                                     </ul>
                                 </div>
 
-                                <div class="card-body">
+                                <div class="card-body ">
 
-                                    <div class="tab-content" id="custom-tabs-two-tabContent">
-
-                                        <div class="tab-pane fade show active" id="custom-tabs-two-home" role="tabpanel" aria-labelledby="custom-tabs-two-home-tab">
-
-                                            <table id="example1" class="table table-bordered table-striped" cellspacing="0" width="100%">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Id acceso</th>
-                                                        <th>Nombre acceso </th>
-                                                        <th>Teléfono</th>
-                                                        <th>Descripción</th>
-
-                                                        <th>Opciones</th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>01</td>
-                                                        <td>Entrada Principal </td>
-                                                        <th>+504 9900-0000</th>
-                                                        <td>Frente al anillo</td>
-
-                                                        <th>
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-warning" data-toggle="modal" href="#MasInfo" title="Mas información"> <i class="fas fa-info-circle"></i> </button>
-                                                                <button class="btn btn-danger" data-toggle="modal" href="#EliminarResidente"> <i class="fas fa-trash"></i> </button>
-
-                                                            </div>
-                                                        </th>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>02</td>
-                                                        <td>Entrada alterna</td>
-                                                        <th>+504 9900-0000</th>
-                                                        <td>----</td>
-
-                                                        <th>
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-warning" data-toggle="modal" data-target="#MasInfo" title="Mas información"> <i class="fas fa-info-circle"></i> </button>
-                                                                <button class="btn btn-danger" data-toggle="modal" href="#EliminarResidente"> <i class="fas fa-trash"></i> </button>
-                                                            </div>
-                                                        </th>
-
-                                                    </tr>
+                                    <div class="tab-content " id="custom-tabs-two-tabContent ">
+                                        <div class="tab-pane fade show active " id="custom-tabs-two-home " role="tabpanel " aria-labelledby="custom-tabs-two-home-tab ">
 
 
-                                                </tbody>
-                                                <tfoot>
-
-                                                </tfoot>
-                                            </table>
 
 
 
                                         </div>
-                                        <div class="tab-pane fade" id="custom-tabs-two-profile" role="tabpanel" aria-labelledby="custom-tabs-two-profile-tab">
+                                        <div class="tab-pane fade " id="custom-tabs-two-profile " role="tabpanel " aria-labelledby="custom-tabs-two-profile-tab ">
 
 
 
 
-                                            <div class="row">
+                                            <div class="row ">
 
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box" type="button" type="button" data-toggle="modal" data-target="#VerAccesosVilla">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box " type="button " type="button " data-toggle="modal" data-target="#VerVillas ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000
+                                           "height="70 " width="70 "></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Park Spartans</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Park Spartans</span>
+                                                            <span class="info-box-number ">
+                                                          6
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -447,15 +405,16 @@
 
 
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box" type="button">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/83/d1/6b/83d16b15-4a6f-ae9e-2242-157724170e5a/source/256x256bb.jpg" height="70" width="70"></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box " type="button ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><img img src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/83/d1/6b/83d16b15-4a6f-ae9e-2242-157724170e5a/source/256x256bb.jpg
+                                    " height="70 " width="70 "></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Victoria</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Victoria</span>
+                                                            <span class="info-box-number ">
+                                                          22
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -464,15 +423,16 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box" type="button">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/14/bf/5f/14bf5f7e-7ebc-2ad9-6a6f-57db0f75b4d7/source/256x256bb.jpg" height="70" width="70"></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box " type="button ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><img img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/14/bf/5f/14bf5f7e-7ebc-2ad9-6a6f-57db0f75b4d7/source/256x256bb.jpg
+                                    " height="70 " width="70 "></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Quinn Hill</span>
-                                                            <span class="info-box-number">
-                                                          
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Quinn Hill</span>
+                                                            <span class="info-box-number ">
+                                                          35
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -481,15 +441,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box" type="button" onclick="location.href='\inicio.html'">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://skyprimegroup.com/wp-content/uploads/2018/04/horizon-villas-logo.png" height="70" width="70"></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box " type="button " onclick="location.href='\inicio.html' ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><img img src="https://skyprimegroup.com/wp-content/uploads/2018/04/horizon-villas-logo.png " height="70 " width="70 "></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Horizon</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Horizon</span>
+                                                            <span class="info-box-number ">
+                                                          10
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -500,17 +460,17 @@
                                             </div>
 
                                             <!----------------------Fila 2-------------------------->
-                                            <div class="row">
+                                            <div class="row ">
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa España</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa España</span>
+                                                            <span class="info-box-number ">
+                                                          36
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -519,15 +479,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Robles</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Robles</span>
+                                                            <span class="info-box-number ">
+                                                          29
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -536,15 +496,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Evangelion</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Evangelion</span>
+                                                            <span class="info-box-number ">
+                                                          66
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -553,15 +513,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Florencia</span>
-                                                            <span class="info-box-number">
-                                                          1
-                                                          <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Florencia</span>
+                                                            <span class="info-box-number ">
+                                                          10
+                                                          <small>Residentes</small>
                                                         </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -575,17 +535,17 @@
                                             </div>
 
                                             <!----------------------Fila 3-------------------------->
-                                            <div class="row">
+                                            <div class="row ">
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Real</span>
-                                                            <span class="info-box-number">
-                                                              1
-                                                              <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Real</span>
+                                                            <span class="info-box-number ">
+                                                              33
+                                                              <small>Residentes</small>
                                                             </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -594,15 +554,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Pagani</span>
-                                                            <span class="info-box-number">
-                                                              1
-                                                              <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Pagani</span>
+                                                            <span class="info-box-number ">
+                                                              27
+                                                              <small>Residentes</small>
                                                             </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -611,15 +571,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Indie</span>
-                                                            <span class="info-box-number">
-                                                              1
-                                                              <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Indie</span>
+                                                            <span class="info-box-number ">
+                                                              66
+                                                              <small>Residentes</small>
                                                             </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -628,15 +588,15 @@
                                                 </div>
                                                 <!-- /.col -->
 
-                                                <div class="col-12 col-sm-6 col-md-3">
-                                                    <div class="info-box">
-                                                        <span class="info-box-icon bg-gradient-cyan elevation-1"><i class="bi bi-house-fill"></i></span>
+                                                <div class="col-12 col-sm-6 col-md-3 ">
+                                                    <div class="info-box ">
+                                                        <span class="info-box-icon bg-gradient-cyan elevation-1 "><i class="bi bi-house-fill "></i></span>
 
-                                                        <div class="info-box-content">
-                                                            <span class="info-box-text">Villa Palma real</span>
-                                                            <span class="info-box-number">
-                                                              1
-                                                              <small>Acceso</small>
+                                                        <div class="info-box-content ">
+                                                            <span class="info-box-text ">Villa Palma real</span>
+                                                            <span class="info-box-number ">
+                                                              23
+                                                              <small>Residentes</small>
                                                             </span>
                                                         </div>
                                                         <!-- /.info-box-content -->
@@ -646,22 +606,15 @@
                                                 <!-- /.col -->
 
                                             </div>
-
-
-
-
                                         </div>
 
                                     </div>
                                     <!-- /.card -->
                                 </div>
-
                             </div>
 
                         </div>
 
-
-                        <!-- ===========================fin Listado de accesos================================ -->
                     </div>
 
                 </div>
@@ -870,288 +823,6 @@
         </div>
         <!-- /.modal-dialog -->
 
-        <!-----------------------Modal accesos villas----------------------------------------------------->
-
-
-        <div class="modal fade" id="VerAccesosVilla">
-            <div class="modal-dialog  modal-dialog-scrollable modal-xl ">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="col-12 col-sm-6 col-md-12">
-                            <div class="info-box bg-gradient-lightblue">
-                                <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://dw3jhbqsbya58.cloudfront.net/fit-in/256x256/school-mascot/c/f/3/cf3a7998-81da-42d7-8cc4-7807be38443a.gif?version=635783466000000000" height="70" width="70"></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Villa Park Spartans</span>
-                                    <span class="info-box-number"> 1 <small>Acceso registrado</small></span>
-
-                                </div>
-                                <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <div class="container"></div>
-                    <div class="modal-body">
-                        <!--Cuerpo del modal-->
-
-
-                        <!-- /.card-header -->
-                        <div class="card-body">
-
-                            <div class="card-body">
-                                <table id="example1" class="table table-bordered table-striped" cellspacing="0" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Id acceso</th>
-                                            <th>Nombre acceso </th>
-                                            <th>Teléfono</th>
-                                            <th>Descripción</th>
-                                            <th>Editar</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>102</td>
-                                            <td>Acceso principal spartan </td>
-                                            <th>+504 9900-0000</th>
-                                            <td>unico acceso</td>
-                                            <th>
-                                                <div class="btn-group">
-                                                    <button class="btn btn-warning" data-toggle="modal" href="#EditarAccVillas"> <i class="fas fa-edit"></i> </button>
-
-                                                </div>
-                                            </th>
-
-                                        </tr>
-
-
-
-                                    </tbody>
-                                    <tfoot>
-
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!----------------Modal de editar accesos---------------------------------->
-        <div class="modal fade" id="EditarAccVilla" data-backdrop="static">
-            <div class="modal-dialog  modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="col-12 col-sm-6 col-md-12">
-                            <div class="info-box bg-gradient-lightblue">
-                                <span class="info-box-icon bg-gradient-cyan elevation-1"><img img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/70/6d/34/706d34b8-3a92-6d3f-c4a6-39275e26cefb/source/256x256bb.jpg" height="70" width="70"></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Residencial MG | Información detallada </span>
-                                    <span class="info-box-number"> Lucas Ramirez </span>
-
-
-                                </div>
-                                <div class="btn-group">
-                                    <button class='btn btn-outline-light pull-right' data-toggle="modal" href="#VisitasProgramadas"> Ver visitas programadas </button>
-
-
-                                    <button type="button" class="btn btn-outline-light toastrDefaultInfo" onclick="mostrarBoton()" id="Editar">
-                                        Editar datos
-                                      </button>
-
-
-                                </div>
-                                <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
-                        </div>
-                        <!-- /.col -->
-
-                    </div>
-                    <div class="container"></div>
-                    <div class="modal-body">
-
-                        <!--Script para desbloquear campos para editar al apretan boton editar-->
-                        <script>
-                            var activarButton = document.getElementById('Editar');
-
-
-                            var idsCampos = ['IdRes', 'Nombre', 'NumBloque', 'NumCasa', 'Tel', 'Placa1', 'Placa2', 'Placa3', 'Villa', 'Obs', 'Guardar', 'Correo'];
-
-                            activarButton.addEventListener('click', function() {
-                                idsCampos.forEach(function(idCampo) {
-                                    elem = document.getElementById(idCampo);
-                                    elem.disabled = false;
-                                });
-                            });
-                        </script>
-
-
-                        <!--Cuerpo de modal-->
-
-                        <div class="row">
-
-                            <div class="col-12 col-sm-4 col-md-4">
-
-                                <label for="text" class="col-form-label">Id del residente</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="IdRes" value="0801-1958-02646">
-
-                                <label for="text" class="col-form-label">Nombre completo</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Nombre" value="Lucas Ramirez">
-
-                                <label for="text" class="col-form-label">Numero de bloque</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="NumBloque" value="12">
-
-                                <label for="text" class="col-form-label">Numero de casa</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="NumCasa" value="06">
-
-                                <label for="text" class="col-form-label">Numero de Telefono</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Tel" value="9966-8526">
-
-
-
-                                <h1></h1>
-
-
-
-                            </div>
-
-                            <div class="col-12 col-sm-4 col-md-4">
-
-                                <label for="text" class="col-form-label">Numero de placa 1</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Placa1" value="HAA 4589">
-
-                                <label for="text" class="col-form-label">Numero de placa 2</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Placa2" value="No registrado">
-
-                                <label for="text" class="col-form-label">Numero de placa 3</label>
-                                <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Placa3" value="No registrado">
-
-                                <div class="form-group">
-                                    <label for="exampleSelectBorderWidth2"> Villa de residencia </label>
-                                    <select class="custom-select form-control-border border-width-2" disabled="true" id="Villa">
-                                        <option selected disabled>VillaPark Spartans</option>
-                                        <option value="">Villa victoria</option>
-                                        <option value="">Villa Quinn Hill</option>
-                                        <option value=""> Villa Horizon</option>
-                                        <option value="">Villa España</option>
-                                        <option value="">Villa Robles</option>
-                                        <option value="">Villa Evangelion</option>
-                                        <option value="">Villa Florencia</option>
-                                        <option value="">Villa Real</option>
-                                        <option value="">Villa Pagani</option>
-                                        <option value="">Villa Indie</option>
-                                        <option value="">Villa Palma Real</option>
-                                        
-                                      
-                                    </select>
-                                    <label for="text" class="col-form-label">Correo electrónico</label>
-                                    <input type="text" class="form-control form-control-border border-width-2" disabled="true" id="Correo" placeholder="Ejemplo@correo.com" value="" required>
-
-
-                                </div>
-
-
-
-
-
-                            </div>
-
-                            <div class="col-12 col-sm-4 col-md-4">
-                                <label for="text" class="col-form-label">Observaciones</label>
-                                <textarea type="text" class="form-control" disabled="true" rows="3" id="Obs" placeholder="Sin observaciones"></textarea>
-
-
-                                <h1></h1>
-
-                                <div class="card card-info">
-                                    <div class="card-header bg-gradient-cyan">
-                                        <h3 class="card-title">Archivos adjuntados</h3>
-
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Minimizar">
-                                          <i class="fas fa-minus"></i>
-                                        </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-0">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nombre de archivo</th>
-                                                    <th>Tamaño</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr>
-
-                                                    <tr>
-                                                        <td>Contrato.pdf</td>
-                                                        <td>1.05 Mb</td>
-                                                        <td class="text-right py-0 align-middle">
-                                                            <div class="btn-group btn-group-sm">
-                                                                <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                                                                <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                                                            </div>
-                                                        </td>
-                                                        <tr>
-                                                            <td>Datos personales.pdf</td>
-                                                            <td>2.52 Mb</td>
-                                                            <td class="text-right py-0 align-middle">
-                                                                <div class="btn-group btn-group-sm">
-                                                                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                                                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                                                                </div>
-                                                            </td>
-                                                            <tr>
-
-
-                                                            </tr>
-                                                        </tr>
-                                                    </tr>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.card-body -->
-                                </div>
-
-
-
-                            </div>
-
-
-                            <!-- /.card-body -->
-
-
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary" style="display: none;" id="Guardar">Guardar cambios</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <!-------------------Fin area de modales---------------------------->
 
@@ -1228,7 +899,6 @@
 
 <!-- dropzonejs -->
 <script src="/sentinelAccess/plugins/dropzone/min/dropzone.min.js"></script>
-
 
 <!-- Page specific script -->
 <script>
